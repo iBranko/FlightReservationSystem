@@ -54,8 +54,9 @@ public class SystemRunner {
                         String nome = input.nextLine();
                         System.out.print("CPF do passageiro: ");
                         String cpf = input.nextLine();
-
-                        programa.cadastrarReserva(numeroVoo, nome, cpf);
+                        if (ValidadorCpf.validaCpf(cpf)) {
+                            programa.cadastrarReserva(numeroVoo, nome, cpf);
+                        }
                     } else {
                         System.out.println("Voo nao localizado. Tente novamente\n");
                     }
