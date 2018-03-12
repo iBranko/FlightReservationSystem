@@ -13,4 +13,7 @@ public class Reserva {
                            "\nCPF: " + this.cpf);
     }
 
+    public String getCpf() {
+        return this.cpf;
+    }
 }

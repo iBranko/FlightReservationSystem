@@ -4,6 +4,8 @@ public class ValidadorCpf {
 
     private static boolean isValido = false;
 
+    private ValidadorCpf(){};
+
     public static boolean validaCpf (String cpf) {
 
         String parte1;
